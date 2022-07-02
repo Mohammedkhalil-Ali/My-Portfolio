@@ -1,22 +1,53 @@
 <template>
-    <header class="">
-        <div class="logo flex justify-between">
-            <p>Mohammed Khalil</p>
-            <div class="hamburger">
+    <header class="w-100vw md:h-[15vh] bg-[#12141D] text-white">
+        <div class="logo h-[15vh] w-[100vw] flex justify-evenly items-center">
+            <p class="w-1/5">Mohammed Khalil</p>
+        <nav class="text-white
+        ">
+            <p   class="hidden
+                        lg:inline
+                        lg:px-10
+                        xl:px-24
+                        h-[15vh]
+                        p-[35px]
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        ">Home</p>
+            <p   class="hidden
+                        lg:inline
+                        lg:px-10
+                        xl:px-24
+                        h-[15vh]
+                        p-[35px]
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        ">Skills</p>
+            <p   class="hidden
+                        lg:inline
+                        lg:px-10
+                        xl:px-24
+                        h-[15vh]
+                        p-[35px]
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        ">Project</p>
+            <p   class="hidden
+                        lg:inline
+                        lg:px-10
+                        xl:px-24
+                        h-[15vh]
+                        p-[35px]
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        ">About</p>
+        </nav>
+            <!-- <div class="hamburger">
                 <div class="hamburger-1" id="hamburger">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <nav class="hidden">
-            <ul class="md:flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
     </header>
 </template>
