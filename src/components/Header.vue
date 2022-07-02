@@ -1,8 +1,8 @@
 <template>
-    <header class="w-100vw md:h-[15vh] bg-[#12141D] text-white">
-        <div class="logo h-[15vh] w-[100vw] flex justify-evenly items-center">
-            <p class="w-1/5">Mohammed Khalil</p>
-        <nav class="text-white
+    <header class="w-100vw md:h-[15vh] bg-[#12141D] text-white overflow-hidden">
+        <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
+            <p class="w-1/5 pl-8">Mohammed Khalil</p>
+        <nav class="text-white 
         ">
             <p   class="hidden
                         lg:inline
@@ -41,13 +41,52 @@
                         cursor-pointer
                         ">About</p>
         </nav>
-            <!-- <div class="hamburger">
+            <div class="hamburger visible  lg:invisible pr-8" @click="show = !show">
                 <div class="hamburger-1" id="hamburger">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-            </div> -->
+            </div>
         </div>
     </header>
+
+    <nav class="text-white  lg:invisible bg-[#12141D] overflow-hidden transition-all duration-500"
+        :class="show?'visible h-[85vh]':'invisible h-0'"
+                >
+            <p   class="
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        py-4
+                        px-8
+                        ">Home</p>
+            <p   class="
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        py-4
+                        px-8
+                        ">Skills</p>
+            <p   class="
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        py-4
+                        px-8
+                        ">Project</p>
+            <p   class="
+                        hover:bg-[#171923]
+                        cursor-pointer
+                        py-4
+                        px-8
+                        ">About</p>
+        </nav>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            show:false
+        }
+    },
+}
+</script>
