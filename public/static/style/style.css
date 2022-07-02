@@ -8,15 +8,24 @@
     display: block !important;
     color: white !important;
     margin-right: 10px !important;
-    margin: 6px auto;
+    margin: 6px auto;   
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #hamburger.is-active .line:nth-child(2){
-    opacity: 0px;
+    opacity: 0;
 }
 #hamburger.is-active .line:nth-child(1){
-    opacity: 0px;
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
 #hamburger.is-active .line:nth-child(3){
-    opacity: 0px;
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }

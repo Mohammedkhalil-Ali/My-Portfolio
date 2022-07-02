@@ -42,10 +42,16 @@
                         ">About</p>
         </nav>
             <div class="hamburger visible  lg:invisible pr-8" @click="show = !show">
-                <div class="hamburger-1" id="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+                <div class="hamburger-1" id="hamburger" 
+                    :class="{ 'is-active': show }"
+                
+                >
+                    <span class="line"
+                    ></span>
+                    <span class="line"
+                    ></span>
+                    <span class="line"
+                    ></span>
                 </div>
             </div>
         </div>
