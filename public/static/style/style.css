@@ -1,0 +1,22 @@
+.hamburger{
+    cursor: pointer;
+}
+.hamburger-1 .line{
+    width: 25px !important;
+    height: 2px !important;
+    background-color: black !important;
+    display: block !important;
+    color: black !important;
+    margin-right: 10px !important;
+    margin: 6px auto;
+}
+
+#hamburger.is-active .line:nth-child(2){
+    opacity: 0px;
+}
+#hamburger.is-active .line:nth-child(1){
+    opacity: 0px;
+}
+#hamburger.is-active .line:nth-child(3){
+    opacity: 0px;
+}
