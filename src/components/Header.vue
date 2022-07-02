@@ -1,42 +1,42 @@
 <template>
-    <header class="w-100vw md:h-[15vh] bg-[#12141D] text-white overflow-hidden">
+    <header class="w-100vw h-[15vh] bg-[#12141D] text-white overflow-hidden">
         <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
-            <p class="w-3/5 md:w-1/5 pl-8">Mohammed Khalil</p>
-        <nav class="text-white 
+            <p class="w-3/5 md:w-3/6 pl-8 text-2xl font-mono">Mohammed <span class="text-red-500">Khalil</span></p>
+        <nav class="text-white text-2xl font-mono ml-14
         ">
             <p   class="hidden
                         lg:inline
                         lg:px-10
-                        xl:px-24
+                        xl:px-16
                         h-[15vh]
-                        p-[35px]
+                        p-[50px]
                         hover:bg-[#171923]
                         cursor-pointer
                         ">Home</p>
             <p   class="hidden
                         lg:inline
                         lg:px-10
-                        xl:px-24
+                        xl:px-16
                         h-[15vh]
-                        p-[35px]
+                        p-[50px]
                         hover:bg-[#171923]
                         cursor-pointer
                         ">Skills</p>
             <p   class="hidden
                         lg:inline
                         lg:px-10
-                        xl:px-24
+                        xl:px-16
                         h-[15vh]
-                        p-[35px]
+                        p-[50px]
                         hover:bg-[#171923]
                         cursor-pointer
                         ">Project</p>
             <p   class="hidden
                         lg:inline
                         lg:px-10
-                        xl:px-24
+                        xl:px-16
                         h-[15vh]
-                        p-[35px]
+                        p-[50px]
                         hover:bg-[#171923]
                         cursor-pointer
                         ">About</p>
@@ -57,7 +57,7 @@
         </div>
     </header>
 
-    <nav class="text-white  lg:invisible bg-[#12141D] overflow-hidden transition-all duration-500"
+    <nav class="text-white text-2xl  lg:invisible bg-[#12141D] overflow-hidden transition-all duration-500"
         :class="show?'visible h-[85vh]':'invisible h-0'"
                 >
             <p   class="
