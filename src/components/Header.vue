@@ -1,7 +1,7 @@
 <template>
     <header class="w-100vw md:h-[15vh] bg-[#12141D] text-white overflow-hidden">
         <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
-            <p class="w-1/5 pl-8">Mohammed Khalil</p>
+            <p class="w-2/5 md:w-1/5 pl-8">Mohammed Khalil</p>
         <nav class="text-white 
         ">
             <p   class="hidden
