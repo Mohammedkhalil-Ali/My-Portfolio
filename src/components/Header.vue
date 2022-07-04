@@ -1,5 +1,5 @@
 <template>
-    <header class="w-100vw h-[15vh] bg-[#12141D] text-white overflow-hidden">
+    <header class="w-100vw h-[15vh] fixed bg-[#12141D] text-white overflow-hidden">
         <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
             <p class="w-5/6   md:w-3/6 pl-8 text-xl font-mono">Mohammed<span class="text-red-500">Khalil</span></p>
         <nav class="text-white text-xl font-mono ml-14
@@ -87,7 +87,7 @@
         </nav>
 
         <div class="aboutme md:flex md:h-[85vh] md:items-center md:justify-evenly py-4 md:p-0 w-full">
-            <div class="nusin py-8 md:p-0 md:w-full">
+            <div class="nusin py-8 md:p-0 md:w-full  mt-[15vh]">
                 <p class="text-xl text-center md:text-3xl text-slate-400 font-light">Hello, my name is <span class="text-red-500">Mohammed Khalil</span> <br> and iam a <span class="text-slate-600">FullStack developer</span>  <br> Wellcome to my <span class="text-red-500">Portfolio</span></p>
             </div>
             <div class="imagej rounded-full py-8 md:p-0">
