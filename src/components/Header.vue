@@ -114,7 +114,7 @@
 
         <div class="aboutme md:flex md:h-[85vh] items-center justify-between w-screen py-4 md:p-0">
             <div class="py-8 md:p-0 w-full md:ml-10">
-                <p class="text-xl text-center w-full md:text-3xl text-slate-400 font-light">Hello, my name is <span class="text-red-500">Mohammed Khalil</span> <br> and iam a <span class="text-slate-600">FullStack developer</span>  <br> Wellcome to my <span class="text-red-500">Portfolio</span></p>
+                <p class="text-xl text-center w-full md:text-3xl text-slate-400 font-light">Hello, my name is <span class="text-red-500">Mohammed Khalil</span> <br> and i am a <span class="text-slate-600">FullStack developer</span>  <br> Wellcome to my <span class="text-red-500">Portfolio</span></p>
             </div>
             <div class=" rounded-full py-8 md:p-0">
                     <img src="../../public/static/images/me.jpg" alt="" srcset="" class="h-[70%] w-[70%] sm:h-[50%] sm:w-[50%] m-auto md:m-0 md:w-[60%] md:h-[70%] lg:w-[50%] lg:h-[70%] md:mr-10 md:float-right rounded-full">
