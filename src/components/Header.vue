@@ -88,7 +88,7 @@
 
         <div class="aboutme md:flex md:h-[85vh] md:items-center md:justify-evenly py-4 md:p-0 w-full">
             <div class="nusin py-8 md:p-0 md:w-full">
-                <p class="text-xl text-center md:text-3xl text-slate-400 font-light">Hello, my name is <span class="text-red-500">Mohammed Khalil</span> <br> and iam a <span class="text-slate-600">FullStack developer</span>  <br> Wllcome to my <span class="text-red-500">Portfolio</span></p>
+                <p class="text-xl text-center md:text-3xl text-slate-400 font-light">Hello, my name is <span class="text-red-500">Mohammed Khalil</span> <br> and iam a <span class="text-slate-600">FullStack developer</span>  <br> Wellcome to my <span class="text-red-500">Portfolio</span></p>
             </div>
             <div class="imagej rounded-full py-8 md:p-0">
                     <img src="../../public/static/images/me.jpg" alt="" srcset="" class="h-[70%] w-[70%] sm:h-[50%] sm:w-[50%] m-auto md:w-[40%] md:h-[70%] lg:w-[50%] lg:h-[70%] rounded-full">
