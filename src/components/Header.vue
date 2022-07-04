@@ -133,6 +133,7 @@ export default {
     methods:{
         isactiveRoute(name){
             this.isactive=name
+            this.show=false
         }
     }
 }
