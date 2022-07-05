@@ -1,9 +1,9 @@
 <template>
-    <header class="w-100vw h-[15vh] sticky top-0 bg-[#12141D] text-white overflow-hidden">
+    <header class="w-100vw h-[15vh] relative lg:relative top-0 bg-[#12141D] text-white overflow-hidden"  id="home">
         <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
             <p class="w-5/6 md:w-4/6 pl-8 text-xl font-mono">Mohammed<span class="text-red-500">Khalil</span></p>
         <nav class="text-white text-xl font-mono 
-        ">
+        "><a to="#hpme">
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -15,7 +15,8 @@
                         "
                         :class="isactive=='home'?'text-red-500':''"
                         @click="isactiveRoute('home')"
-                        >Home</p>
+                        >Home</p></a>
+                        <a href="#skills">
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -27,7 +28,7 @@
                         "
                         :class="isactive=='skills'?'text-red-500':''"
                         @click="isactiveRoute('skills')"
-                        >Skills</p>
+                        >Skills</p></a>
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -58,7 +59,6 @@
             <div class="hamburger visible  lg:invisible pr-8" @click="show = !show">
                 <div class="hamburger-1" id="hamburger" 
                     :class="{ 'is-active': show }"
-                
                 >
                     <span class="line"
                     ></span>
@@ -74,6 +74,7 @@
     <nav class="text-white text-xl fixed top-[15vh] w-full lg:invisible bg-[#12141D] overflow-hidden transition-all duration-500 "
         :class="show?'visible h-[85vh]':'invisible h-0'"
                 >
+                <a href="#home">
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -82,7 +83,8 @@
                         "
                         :class="isactive=='home'?'text-red-500':''"
                         @click="isactiveRoute('home')"
-                        >Home</p>
+                        >Home</p></a>
+                        <a href="#skills">
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -91,7 +93,7 @@
                         "
                         :class="isactive=='skills'?'text-red-500':''"
                         @click="isactiveRoute('skills')"
-                        >Skills</p>
+                        >Skills</p></a>
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -120,8 +122,10 @@
                     <img src="../../public/static/images/me.jpg" alt="" srcset="" class="h-[70%] w-[70%] sm:h-[50%] sm:w-[50%] m-auto md:m-0 md:w-[60%] md:h-[70%] lg:w-[50%] lg:h-[70%] md:mr-10 md:float-right rounded-full">
             </div>
         </div>
+<div class="bg-[#16181d] w-full" id="skills">
+    <p class="flex justify-center text-7xl text-red-700 py-5">SKills</p>
 
-        <div class="bg-[#16181d] pt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center grid-rows-4">
+        <div class="pt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center grid-rows-4">
             <div class="cursor-pointer">
                 <i class="fa-brands fa-html5 text-red-700 text-9xl p-1"></i>
                 <p class="text-white text-center">HTML</p>
@@ -170,6 +174,7 @@
                 <img src="../../public/static/images/vuetify.png" alt="" srcset="" class="w-28 mb-4">
                 <p class="text-white text-center">Vuetify</p>
             </div>
+        </div>
         </div>
 </template>
 
