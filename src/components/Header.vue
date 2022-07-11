@@ -3,7 +3,7 @@
         <div class="logo h-[15vh] w-[100vw] flex justify-between items-center">
             <p class="w-5/6 md:w-4/6 pl-8 text-xl font-mono">Mohammed<span class="text-red-500">Khalil</span></p>
         <nav class="text-white text-xl font-mono 
-        "><a to="#hpme">
+        ">
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -13,10 +13,10 @@
                         hover:bg-[#171923]
                         cursor-pointer
                         "
+                        id="home"
                         :class="isactive=='home'?'text-red-500':''"
                         @click="isactiveRoute('home')"
-                        >Home</p></a>
-                        <a href="#skills">
+                        >Home</p>
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -26,9 +26,10 @@
                         hover:bg-[#171923]
                         cursor-pointer
                         "
+                        id="skills"
                         :class="isactive=='skills'?'text-red-500':''"
                         @click="isactiveRoute('skills')"
-                        >Skills</p></a>
+                        >Skills</p>
             <p   class="hidden
                         lg:inline
                         lg:px-10
@@ -74,7 +75,6 @@
     <nav class="text-white text-xl fixed top-[15vh] w-full lg:invisible bg-[#12141D] overflow-hidden transition-all duration-500 "
         :class="show?'visible h-[85vh]':'invisible h-0'"
                 >
-                <a href="#home">
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -83,8 +83,7 @@
                         "
                         :class="isactive=='home'?'text-red-500':''"
                         @click="isactiveRoute('home')"
-                        >Home</p></a>
-                        <a href="#skills">
+                        >Home</p>
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -93,7 +92,7 @@
                         "
                         :class="isactive=='skills'?'text-red-500':''"
                         @click="isactiveRoute('skills')"
-                        >Skills</p></a>
+                        >Skills</p>
             <p   class="
                         hover:bg-[#171923]
                         cursor-pointer
@@ -109,6 +108,7 @@
                         py-4
                         px-8
                         "
+                        
                         :class="isactive=='about'?'text-red-500':''"
                         @click="isactiveRoute('about')"
                         >About</p>
@@ -122,8 +122,8 @@
                     <img src="../../public/static/images/me.jpg" alt="" srcset="" class="h-[70%] w-[70%] sm:h-[50%] sm:w-[50%] m-auto md:m-0 md:w-[60%] md:h-[70%] lg:w-[50%] lg:h-[70%] md:mr-10 md:float-right rounded-full">
             </div>
         </div>
-<div class="bg-[#16181d] w-full" id="skills">
-    <p class="flex justify-center text-7xl text-red-700 py-5">SKills</p>
+<div class="bg-[#16181d] w-full" >
+    <p class="flex justify-center text-7xl text-red-700 py-5" id="skills">SKills</p>
 
         <div class="pt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center grid-rows-4">
             <div class="cursor-pointer">
@@ -177,59 +177,102 @@
         </div>
         </div>
 
-        <div id="projects">
-         <swiper
-    :slidesPerView="3"
-    :spaceBetween="30"
-    :pagination="{
-      clickable: true,
-    }"
-    :modules="modules"
-    class="mySwiper w-full h-40"
-  >
-    <swiper-slide>Slide 1</swiper-slide><swiper-slide>Slide 2</swiper-slide
-    ><swiper-slide>Slide 3</swiper-slide><swiper-slide>Slide 4</swiper-slide
-    ><swiper-slide>Slide 5</swiper-slide><swiper-slide>Slide 6</swiper-slide
-    ><swiper-slide>Slide 7</swiper-slide><swiper-slide>Slide 8</swiper-slide
-    ><swiper-slide>Slide 9</swiper-slide>
-  </swiper>
-        </div>
+
+  <div class="relative ">
+    <swiper
+      :slidesPerView="3"
+      :effect="'fade'"
+      :spaceBetween="30"
+      :navigation="navigation"
+      :loop="true"
+      :pagination="pagination"
+      :modules="modules"
+    >
+
+      <swiper-slide>
+        <img src="../../public/static/images/slider1.jpg" alt="" srcset="" class="h-60 w-full">
+      </swiper-slide>
+     <swiper-slide>
+        <img src="../../public/static/images/slider2.jpg" alt="" srcset="" class="h-60 w-full">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../public/static/images/slider3.png" alt="" srcset="" class="h-60 w-full">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="../../public/static/images/slider4.jpg" alt="" srcset="" class="h-60 w-full">
+      </swiper-slide>
+      
+    </swiper>
+    <button class="next w-16 h-16 absolute top-24 z-50 right-10 rounded-full bg-green-700"><i class="fa-solid fa-angle-right text-white"></i></button>
+    <button class=" prev w-16 h-16 absolute top-24 z-50 left-10 rounded-full bg-green-700"><i class="fa-solid fa-angle-left text-white"></i></button>
+  </div>
+
+
+
 </template>
 
 <script>
- // Import Swiper Vue.js components
+// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
-
 // Import Swiper styles
 import "swiper/css";
 
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
 // import required modules
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 export default {
+    components: {
+    Swiper,
+    SwiperSlide,
+  },
     data() {
         return {
             show:false,
-            isactive:'home'
+            isactive:'home',
+            pagination: {
+        el: ".swiper-pagination2",
+        type: "bullets",
+        clickable: true,
+        renderBullet: function() {
+          return `<div class=" swiper-pagination-bullet   " style="background: #fff !important; width:10px;height:10px;opacity:1;margin-top:8px;" ></div>`;
+        },
+       
+
+      }, 
+       navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },   
+      modules: [ Navigation, Pagination], 
         }
     },
     methods:{
         isactiveRoute(name){
             this.isactive=name
             this.show=false
+            if (name == "home") {
+        let home = document.getElementById("home");
+        if (home) {
+          window.scrollTo({
+            top: home.offsetTop,
+            behavior: "smooth",
+          });
         }
+      }  else if (name == "skills") {
+        let skills = document.getElementById("skills");
+        if (skills) {
+            window.scrollTo({
+            top: skills.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      }
+        },
     },
-     components: {
-      Swiper,
-      SwiperSlide,
-    },
-    setup() {
-      return {
-        modules: [Pagination]
-      };
-    },
+     
+    
 }
 </script>
