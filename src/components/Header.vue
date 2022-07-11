@@ -179,8 +179,11 @@
 
 
   <div class="relative ">
+    <p class="flex justify-center text-7xl text-red-700 py-7" id="skills">Projects</p>
+
     <swiper
       :slidesPerView="3"
+      :breakpoints="breakpoints"
       :effect="'fade'"
       :spaceBetween="30"
       :navigation="navigation"
@@ -203,8 +206,8 @@
       </swiper-slide>
       
     </swiper>
-    <button class="next w-16 h-16 absolute top-24 z-50 right-10 rounded-full bg-green-700"><i class="fa-solid fa-angle-right text-white"></i></button>
-    <button class=" prev w-16 h-16 absolute top-24 z-50 left-10 rounded-full bg-green-700"><i class="fa-solid fa-angle-left text-white"></i></button>
+    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-56 z-50 right-2 md:right-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-right text-white"></i></button>
+    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-56 z-50 left-2 md:left-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-left text-white"></i></button>
   </div>
 
 
@@ -230,6 +233,24 @@ export default {
   },
     data() {
         return {
+           breakpoints: {
+            300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            },
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            },
+            1080: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            },
+            1780: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            },
+      },
             show:false,
             isactive:'home',
             pagination: {
