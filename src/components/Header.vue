@@ -193,21 +193,26 @@
     >
 
       <swiper-slide>
-        <img src="../../public/static/images/slider1.jpg" alt="" srcset="" class="h-60 w-full">
+        <img src="../../public/static/images/slider1.jpg" alt="" srcset="" class="h-80 w-full">
       </swiper-slide>
      <swiper-slide>
-        <img src="../../public/static/images/slider2.jpg" alt="" srcset="" class="h-60 w-full">
+        <img src="../../public/static/images/slider2.jpg" alt="" srcset="" class="h-80 w-full">
       </swiper-slide>
       <swiper-slide>
-        <img src="../../public/static/images/slider3.png" alt="" srcset="" class="h-60 w-full">
+        <img src="../../public/static/images/slider3.png" alt="" srcset="" class="h-80 w-full">
       </swiper-slide>
       <swiper-slide>
-        <img src="../../public/static/images/slider4.jpg" alt="" srcset="" class="h-60 w-full">
+        <img src="../../public/static/images/slider4.jpg" alt="" srcset="" class="h-80 w-full">
       </swiper-slide>
       
     </swiper>
-    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-56 z-50 right-2 md:right-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-right text-white"></i></button>
-    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-56 z-50 left-2 md:left-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-left text-white"></i></button>
+    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-64 z-50 right-2 md:right-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-right text-white"></i></button>
+    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-64 z-50 left-2 md:left-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-left text-white"></i></button>
+    <div class="h-20"></div>
+  </div>
+
+  <div class="bg-[#16181d] w-full" >
+    <p class="flex justify-center text-7xl text-red-700 py-5" id="skills">About</p>
   </div>
 
 
