@@ -231,11 +231,12 @@
         </div>
 
 
-  <div class="relative ">
+  <div class="relative " >
     <p class="flex justify-center text-7xl text-red-700 py-7" id="skills">Projects</p>
     <br><br>
 
     <swiper
+    data-aos="fade-down"
       :slidesPerView="3"
       :breakpoints="breakpoints"
       :effect="'fade'"
@@ -260,8 +261,8 @@
       </swiper-slide>
       
     </swiper>
-    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 right-2 md:right-6 rounded-full bg-red-700 hover:bg-red-900"><i class="fa-solid fa-angle-right text-white"></i></button>
-    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 left-2 md:left-6 rounded-full bg-red-700 hover:bg-red-900"><i class="fa-solid fa-angle-left text-white"></i></button>
+    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 right-2 md:right-6 rounded-full bg-red-700 hover:bg-red-900" data-aos="fade-down"><i class="fa-solid fa-angle-right text-white"></i></button>
+    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 left-2 md:left-6 rounded-full bg-red-700 hover:bg-red-900" data-aos="fade-down"><i class="fa-solid fa-angle-left text-white"></i></button>
     <div class="h-24"></div>
   </div>
 
