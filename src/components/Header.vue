@@ -130,78 +130,102 @@
 >
     <p class="flex justify-center text-7xl text-red-700 py-5" id="skills">SKills</p>
 
-        <div class="pt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center grid-rows-4">
-            <div class="cursor-pointer"
+        <div class="pt-6 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center grid-rows-4 ">
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-red-600 p-5 w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <i class="fa-brands fa-html5 text-red-700 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-html5 text-red-700 text-9xl p-1 "></i>
                 <p class="text-white text-center">HTML</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-blue-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <i class="fa-brands fa-css3 text-blue-700 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-css3 text-blue-700 text-9xl p-1"></i>
                 <p class="text-white text-center">CSS</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-purple-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <i class="fa-brands fa-bootstrap text-purple-700 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-bootstrap text-purple-700 text-9xl p-1"></i>
                 <p class="text-white text-center">Bootstrap</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-sky-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <img src="../../public/static/images/Tailwind.png" alt="" srcset="" class="w-28">
+                <div>
+                  <img src="../../public/static/images/Tailwind.png" alt="" srcset="" class="w-28">
                 <p class="text-white text-center">Tailwind</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-yellow-400 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down">
 
-                <i class="fa-brands fa-js text-yellow-500 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-js text-yellow-500 text-9xl p-1"></i>
                 <p class="text-white text-center">JS</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-green-700 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <i class="fa-brands fa-vuejs text-green-900 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-vuejs text-green-900 text-9xl p-1"></i>
                 <p class="text-white text-center">Vue JS</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-blue-900 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <i class="fa-brands fa-react text-cyan-900 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-react text-cyan-900 text-9xl p-1"></i>
                 <p class="text-white text-center">React JS</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-blue-500 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down">
 
-                <i class="fa-brands fa-php text-blue-500 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-php text-blue-500 text-9xl p-1"></i>
                 <p class="text-white text-center">PHP</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-red-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down">
 
-                <i class="fa-brands fa-laravel text-red-600 text-9xl p-1"></i>
+                <div>
+                  <i class="fa-brands fa-laravel text-red-600 text-9xl p-1"></i>
                 <p class="text-white text-center">Laravel</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-orange-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down">
 
-                <img src="../../public/static/images/MySQL.png" alt="" srcset="" class="w-52">
+                <div>
+                  <img src="../../public/static/images/MySQL.png" alt="" srcset="" class="w-52">
                 <p class="text-white text-center">MySQL</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-blue-600 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down">
 
-                <img src="../../public/static/images/jquery.png" alt="" srcset="" class="w-28 mb-4">
+                <div>
+                  <img src="../../public/static/images/jquery.png" alt="" srcset="" class="w-28 mb-4">
                 <p class="text-white text-center">Jquery</p>
+                </div>
             </div>
-            <div class="cursor-pointer"
+            <div class="cursor-pointer border border-[#16181d] rounded-md hover:border-blue-200 p-5  w-52 flex items-center justify-center"
             data-aos="fade-down"
     >
-                <img src="../../public/static/images/vuetify.png" alt="" srcset="" class="w-28 mb-4">
+                <div>
+                  <img src="../../public/static/images/vuetify.png" alt="" srcset="" class="w-28 mb-4">
                 <p class="text-white text-center">Vuetify</p>
+                </div>
             </div>
         </div>
         </div>
@@ -209,6 +233,7 @@
 
   <div class="relative ">
     <p class="flex justify-center text-7xl text-red-700 py-7" id="skills">Projects</p>
+    <br><br>
 
     <swiper
       :slidesPerView="3"
@@ -235,15 +260,23 @@
       </swiper-slide>
       
     </swiper>
-    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-64 z-50 right-2 md:right-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-right text-white"></i></button>
-    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-64 z-50 left-2 md:left-10 rounded-full bg-red-700"><i class="fa-solid fa-angle-left text-white"></i></button>
-    <div class="h-20"></div>
+    <button class="next md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 right-2 md:right-6 rounded-full bg-red-700 hover:bg-red-900"><i class="fa-solid fa-angle-right text-white"></i></button>
+    <button class=" prev md:w-16 md:h-16 w-10 h-10 absolute top-80 z-50 left-2 md:left-6 rounded-full bg-red-700 hover:bg-red-900"><i class="fa-solid fa-angle-left text-white"></i></button>
+    <div class="h-24"></div>
   </div>
 
   <div class="bg-[#16181d] w-full" >
     <p class="flex justify-center text-7xl text-red-700 py-5" id="skills">About</p>
-    <div class="bashyyak"></div>
-    <div class="bashydw"></div>
+    <div class="flex justify-around  py-10">
+      <div class="bashyyak mr-4 text-white text-2xl font-mono">
+      <p>My name is mohammed khalil iam a web developer,<br>
+      iam student in Sulemany Polytechnic University 4th Stage</p>
+    </div>
+    <div class="bashydw text-white text-2xl font-mono">
+      Me in Social Media <br>
+      Facebook
+    </div>
+    </div>
   </div>
 
 
