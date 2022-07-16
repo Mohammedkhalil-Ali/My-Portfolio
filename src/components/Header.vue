@@ -213,6 +213,8 @@
 
   <div class="bg-[#16181d] w-full" >
     <p class="flex justify-center text-7xl text-red-700 py-5" id="skills">About</p>
+    <div class="bashyyak"></div>
+    <div class="bashydw"></div>
   </div>
 
 
